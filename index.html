@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Life</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <button id="ctrl1" title="Случайная генерация первого поколения (зависит от плотности)">Генерация</button>
+            <span id="info1" title="Время генерации, мс">...</span>
+            <span id="info2" title="Количество клеток (живых и мертвых)">...</span>
+            <button id="ctrl2">play</button>
+            <span id="info3" title="Среднее время отрисовки, мс (последние 10 итераций)">...</span>
+
+            <span>Размер поля: </span>
+            <input type="text" id="input1" value="800" placeholder="Размер поля" title="Размер поля (100 200 400 ...)">
+            <span>Количество строк/колонок: </span>
+            <input type="text" id="input4" value="100" placeholder="Количество строк/колонок" title="Количество строк/колонок (10 20 100 ...)">
+            <span>Плотность: </span>
+            <input type="text" id="input2" value="10" placeholder="Плотность генерации, %" title="Плотность генерации, % (5 10 50 100 ...)">
+            <span>Частота: </span>
+            <input type="text" id="input3" value="100" placeholder="Частота степов, мс" title="Частота степов, мс (10 100 500 ...)">
+        </div>
+        <canvas id="canvas" height="800px" width="800px"></canvas>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
